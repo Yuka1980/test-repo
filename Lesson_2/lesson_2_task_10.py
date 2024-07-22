@@ -2,6 +2,6 @@ def bank(x, y):
     for i in range(1, y+1):
         count = x + (x/10)
         x = count
-    print(round(count, 2))
+    print(round(count, 4))
 
 bank(10000, 10)
