@@ -1,5 +1,5 @@
 from selenium import webdriver
-from time sleep
+from time import sleep
 
 chrome = webdriver.Chrome()
 firefox = webdriver.Firefox()
@@ -11,7 +11,7 @@ try:
     for _ in range(3):
         # кликаем на синюю кнопку
         blue_button = chrome.find_element(
-            "xpath", '//button[contains(concat(' ', normalize-space(@class), ' '), ' btn-primary ')]')
+            "xpath", '//button[contains(concat(' ', normalize-space(@class), ' '), ' btn-primary ')]')с
         blue_button.click()
         blue_button = firefox.find_element(
             "xpath", '//button[contains(concat(' ', normalize-space(@class), ' '), ' btn-primary ')]')

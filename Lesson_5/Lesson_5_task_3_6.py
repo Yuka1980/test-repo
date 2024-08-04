@@ -10,8 +10,8 @@ try:
     # firefox.maximize_window()
     chrome.get("http://the-internet.herokuapp.com/login")
     firefox.get("http://the-internet.herokuapp.com/login")
-    input_name = chrome.find_element(By.ID, "username").send_keys(tomsmith)
-    input_name = firefox.find_element(By.ID, "username").send_keys(tomsmith)
+    input_name = chrome.find_element(By.ID, "username").send_keys("tomsmith")
+    input_name = firefox.find_element(By.ID, "username").send_keys("tomsmith")
     sleep(1)
     # input_name.send_keys("tomsmith")
     input_pass = chrome.find_element(

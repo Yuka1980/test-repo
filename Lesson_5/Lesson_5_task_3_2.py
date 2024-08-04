@@ -1,5 +1,5 @@
 from selenium import webdriver
-from time sleep
+from time import sleep
 
 chrome = webdriver.Chrome()
 firefox = webdriver.Firefox()
