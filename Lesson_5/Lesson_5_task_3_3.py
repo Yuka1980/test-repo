@@ -11,7 +11,7 @@ try:
     for _ in range(3):
         # кликаем на синюю кнопку
         blue_button = chrome.find_element(
-            "xpath", '//button[contains(concat(' ', normalize-space(@class), ' '), ' btn-primary ')]')с
+            "xpath", '//button[contains(concat(' ', normalize-space(@class), ' '), ' btn-primary ')]')
         blue_button.click()
         blue_button = firefox.find_element(
             "xpath", '//button[contains(concat(' ', normalize-space(@class), ' '), ' btn-primary ')]')
@@ -25,7 +25,3 @@ except Exception as ex:
 finally:
     chrome.quit()
     firefox.quit()
-
-
-
-

@@ -23,9 +23,3 @@ try:
         count = count + 1
         sleep(2)
         print(count)
-        
-except Exception as ex:
-    print(ex)
-finally:
-    chrome.quit()
-    firefox.quit()
