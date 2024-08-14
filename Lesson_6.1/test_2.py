@@ -4,11 +4,11 @@ from selenium.webdriver.common.by import By
 from configuration import *
 
 def test_calculator_form(chrome_browser):
-    chrome_brouser.get(URL_2)
+    chrome_browser.get(URL_2)
     # Enter 45 in the delay input field
     delay_input = chrome_browser.find_element(By.ID, "delay")
     delay_input.clear()
-    delay_input.send_key(45)
+    delay_input.send_keys(45)
     # Click on the buttons:
     # 7
     chrome_browser.find_element(By.XPATH, "//span[text() = '7']").click()

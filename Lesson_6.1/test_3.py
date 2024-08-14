@@ -18,6 +18,6 @@ def test_shop_form(chrome_browser):
     total_price = chrome_browser.find_element(By.CLASS_NAME, 'summary_total_label')
     total = total_price.text.strip().replace("Total: $", "")
 
-    except_total = "58.29"
-    assert total == except_total # сверяем итоговую сумму
+    excepted_total = "58.29"
+    assert total == excepted_total # сверяем итоговую сумму
     print(f"Итоговая сумма равна ${total}")
