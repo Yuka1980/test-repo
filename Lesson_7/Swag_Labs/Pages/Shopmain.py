@@ -18,9 +18,9 @@ class ShopmainPage:
         
     # кликаем кнопку добавления товаров в корзину
     def buy_issue(self):
-        self.Sauce_Labs_Backpack = (By.ID, "add-to-cart-sause-labs-backpack")
-        self.Sauce_Labs_Bolt_TShort = (By.ID, "add-to-cart-sause-labs-bolt-t-shirt")
-        self.Sauce_Labs_Onesie = (By.ID, "add-to-cart-sause-labs-onesie")
+        self.Sauce_Labs_Backpack = (By.ID, "add-to-cart-sauсe-labs-backpack")
+        self.Sauce_Labs_Bolt_TShort = (By.ID, "add-to-cart-sauсe-labs-bolt-t-shirt")
+        self.Sauce_Labs_Onesie = (By.ID, "add-to-cart-sauсe-labs-onesie")
         
     # добавляем товары в корзину
     def click_issue(self):

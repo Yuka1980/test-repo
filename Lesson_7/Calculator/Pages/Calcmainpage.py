@@ -10,7 +10,7 @@ class CalcMain:
 
     # находим элемент и устанавливаем время ожидания    
     def insert_time(self):
-        delay_input = self.browser.fined_element(By.ID, "delay")
+        delay_input = self.browser.find_element(By.ID, "delay")
         delay_input.clear()
         delay_input.send_keys(45)
 
