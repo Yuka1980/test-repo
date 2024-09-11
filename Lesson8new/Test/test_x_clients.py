@@ -79,7 +79,7 @@ def test_add_employer_without_token():
 
 def test_add_employer_without_body(get_token):
     token = str(get_token)
-    com_id = company.last_actove_company_id()
+    com_id = company.last_active_company_id()
     body_employer = {}
     new_employer = employer.add_new(token, body_employer)
     assert new_employer['message'] == ' Internal server error'
@@ -127,7 +127,7 @@ def test_get_info_new_employers_missing_employer_id():
         employer.get_info()
     except TypeError as e:
         assert str(
-            e) == "Employer.get_info() missing 1 required positional argement: 'employee_id'"
+            e) == "Employer.get_info() missing 1 required positional argument: 'employee_id'"
         
 
 def test_change_employer_info(get_token):
@@ -155,7 +155,7 @@ def test_change_employer_info(get_token):
         'isActive': 'true'
     }
     employer_changed = employer.change_info(token, id, body_change_employer)
-    assert employer_changed.satus_code == 200
+    assert employer_changed.status_code == 200
 
     """Проверяем ID сотрудника и сверяем с ID при создании"""
     assert id == employer_changed.json()['id']
