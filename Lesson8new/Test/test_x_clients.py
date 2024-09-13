@@ -115,7 +115,7 @@ def test_get_list_employers_invalid_company_id():
         employer.get_list('')
     except TypeError as e:
         assert str(
-            e) == "Employer.get_list() missing 1 required positional argement: 'company_id'"
+            e) == "Employer.get_list() missing 1 required positional argument: 'company_id'"
         
 
 """Проверяем обязательное поле 'ID сотрудника' в запросе на получение информации о работнике -
